@@ -4,13 +4,13 @@ import React from "react";
 
 export default class App extends React.Component {
 
-  constructor(props) {
+  /*constructor(props) {
     super(props)
     this.state = {
       counter: 0
     }
     this.handler = this.handler.bind(this)
-  }
+  }*/
 
   state = {
     data: [
@@ -76,12 +76,9 @@ class Item extends React.Component {
     }
   }
 
-  
-
   changeColor() {
     this.setState({ selectedImage: !this.state.selectedImage })
   }
-
 
   render() {
     return (
