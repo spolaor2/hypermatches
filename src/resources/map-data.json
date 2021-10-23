@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "name": "Ancient",
+            "photo": "/images/ancient.png"
+        },
+        {
+            "name": "Cache",
+            "photo": "/images/cache.png"
+        },
+        {
+            "name": "Dust 2",
+            "photo": "/images/dust2.png"
+        },
+        {
+            "name": "Inferno",
+            "photo": "/images/inferno.png"
+        },
+        {
+            "name": "Mirage",
+            "photo": "/images/mirage.png"
+        },
+        {
+            "name": "Nuke",
+            "photo": "/images/nuke.png"
+        },
+        {
+            "name": "Overpass",
+            "photo": "/images/overpass.png"
+        },
+        {
+            "name": "Train",
+            "photo": "/images/train.png"
+        },
+        {
+            "name": "Vertigo",
+            "photo": "/images/vertigo.png"
+        }
+    ]
+}

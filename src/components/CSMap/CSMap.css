@@ -1,0 +1,33 @@
+/* .Map-container {
+  width: 80%;
+  height: 100%;
+  background-color: orange;
+  margin-top: 60;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.Map-image {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 70%;
+  height: 100px;
+}
+
+.Map-listItem {
+  margin: 10;
+  padding: 0;
+  width: 80%;
+  flex: 1;
+  align-self: center;
+  flex-direction: row;
+  border-radius: 5;
+  align-items: center;
+  justify-content: center;
+}
+
+.Map-paragraph {
+  text-align: center;
+  font-size: 45;
+} */
