@@ -42,7 +42,6 @@ export default class App extends React.Component {
         "name": "Vertigo",
         "photo": '/images/vertigo.png'
       },
-
     ]
   }
 
