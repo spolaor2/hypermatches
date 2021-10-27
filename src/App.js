@@ -1,7 +1,7 @@
 import './App.css';
-import { View, FlatList, Text, ImageBackground, StyleSheet, Dimensions, Image } from "react-native";
+import { View, FlatList, Text, ImageBackground, StyleSheet, Dimensions } from "react-native";
 import React from "react";
-const trainimage = require('./assets/train.png')
+import images from './images/index.js'
 
 export default class App extends React.Component {
 
@@ -9,39 +9,39 @@ export default class App extends React.Component {
     data: [
       {
         "name": "Ancient",
-        "photo": './assets/ancient.png'
+        "photo": images['ancientmap']
       },
       {
         "name": "Cache",
-        "photo": '/images/cache.png'
+        "photo": images['cachemap']
       },
       {
         "name": "Dust 2",
-        "photo": '/images/dust2.png'
+        "photo": images['dust2map']
       },
       {
         "name": "Inferno",
-        "photo": '/images/inferno.png'
+        "photo":  images['infernomap']
       },
       {
         "name": "Mirage",
-        "photo": '/images/mirage.png'
+        "photo": images['miragemap']
       },
       {
         "name": "Nuke",
-        "photo": '/images/nuke.png'
+        "photo": images['nukemap']
       },
       {
         "name": "Overpass",
-        "photo": '/images/overpass.png'
+        "photo": images['overpassmap']
       },
       {
         "name": "Train",
-        "photo": '/images/train.png'
+        "photo": images['trainmap']
       },
       {
         "name": "Vertigo",
-        "photo": '/images/vertigo.png'
+        "photo": images['vertigomap']
       }
     ]
   }
@@ -50,7 +50,6 @@ export default class App extends React.Component {
     
     return (
       <View style={styles.container}>
-        <Image source={trainimage}/>
         <FlatList
           style={{ flex: 1 }}
           data={this.state.data}
@@ -71,17 +70,16 @@ class Item extends React.Component {
   }
 
   changeColor() {
-    this.setState({ selectedImage: !this.state.selectedImage })
+    this.setState({ selectedImage: true })
   }
 
   render() {
     return (
-      <View style={styles.listItem} >
+      <View style={styles.listItem} onClick={this.changeColor.bind(this)} >
         <ImageBackground
           source={{ uri: this.props.item.photo }}
-          style={[this.state.selectedImage ? styles.imageSelected : styles.imageNotSelected]}
-          onClick={this.changeColor.bind(this)} >
-          <Text style={styles.paragraph}>
+          style={[this.state.selectedImage ? styles.imageSelected : styles.imageNotSelected]}>
+          <Text style={styles.paragraph} >
             {this.props.item.name}
           </Text>
         </ImageBackground>
